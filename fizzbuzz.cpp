@@ -5,7 +5,7 @@ using namespace std;
 vector<string> fizzbuzz(int n)
 {
     vector<string>v;
-    for(int i=0;i<=n;i++)
+    for(int i=1;i<=n;i++)
     {
         if(i%3==0 && i%5==0)
         {
@@ -30,7 +30,7 @@ vector<string> fizzbuzz(int n)
 
 int main()
 {
-    vector<string>s=fizzbuzz(2);
+    vector<string>s=fizzbuzz(10);
     for(int i=1;i<=s.size();i++)
     {
         cout<<s[i]<<" ";
