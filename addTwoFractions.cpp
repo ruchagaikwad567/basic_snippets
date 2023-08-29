@@ -26,6 +26,7 @@ int main()
     int num3,den3;//numerator and denominator of ans
 
     den3=lcm(den1,den2);//denominator of answer is equal to lcm of den1 and den2
+    cout<<"den 3 is "<<den3<<endl;
 
     num3=num1*(den3/den1)+num2*(den3/den2);
 

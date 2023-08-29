@@ -20,6 +20,6 @@ int binToDec(string s)
 
 int main()
 {
-    string s="1011";
+    string s="1000";
     cout<<binToDec(s);
 }

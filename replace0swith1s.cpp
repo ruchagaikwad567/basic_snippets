@@ -26,8 +26,24 @@ int replace(int n)
     return ans;
 }
 
+
+int replace2(int n)
+{
+    string s=to_string(n);
+    string ans="";
+    for(int i=0;i<s.size();i++)
+    {
+        if(s[i]=='0')
+        {
+            s[i]='1';
+        }
+    }
+    int w=stoi(s);
+    return w;
+}
+
 int main()
 {
     int n=204;
-    cout<<replace(n);
+    cout<<replace2(n);
 }
