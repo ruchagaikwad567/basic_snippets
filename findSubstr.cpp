@@ -8,5 +8,7 @@ int main()
     int i=a.find(f);
     cout<<i;
 
+    
+
 }
 
