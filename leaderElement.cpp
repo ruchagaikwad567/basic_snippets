@@ -23,6 +23,22 @@ class Solution{
         // Code here
         
     }
+
+    int leaderSum(int arr[],int n)
+    {
+        int x=arr[n-1];
+        int sum=x;
+
+        for(int i=n-2;i>=0;i--)
+        {
+            if(arr[i]>x)
+            {
+                x=arr[i];
+                sum+=x;
+            }
+        }
+        return sum;
+    }
 };
 
 int main()
@@ -34,5 +50,7 @@ int main()
     {
         cout<<res[i]<<" ";
     }
+
+    cout<<endl<<obj.leaderSum(arr,6);
 
 }
